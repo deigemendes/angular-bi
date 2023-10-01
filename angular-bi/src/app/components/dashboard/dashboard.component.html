@@ -1,3 +1,28 @@
 <div class="po-m-5">Dashboard</div>
 
 
+<div>
+    {{acessoLink}}
+</div>
+
+
+<div>
+
+    <ul>
+        <li *ngFor="let pedido of pedidos">
+            {{pedido}}
+        </li>
+    </ul>
+
+    <po-button
+    p-aria-label="string"
+    p-icon="string | TemplateRef<void>"
+    p-kind="string"
+    p-label="Pesquisar" 
+    p-size="string"
+   > 
+</po-button>
+
+</div>
+
+

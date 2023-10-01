@@ -6,7 +6,9 @@ import { Component } from "@angular/core";
 })
 
 
-export class ComercialComponent {}
+export class ComercialComponent {
+    
+}
 
 
 

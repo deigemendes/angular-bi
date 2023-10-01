@@ -10,10 +10,13 @@ import { PoTemplatesModule } from '@po-ui/ng-templates';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ComercialComponent } from './components/comercial/comercial.component';
 
+import { RelatoriosModule } from './relatorios/relatorios.module';
+import { DashboardService } from './components/dashboard/dashboard.service';
+
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent, 
+    DashboardComponent,
     ComercialComponent
   ],
   imports: [
@@ -21,9 +24,12 @@ import { ComercialComponent } from './components/comercial/comercial.component';
     AppRoutingModule,
     PoModule,
     RouterModule.forRoot([]),
-    PoTemplatesModule
+    PoTemplatesModule,
+    RelatoriosModule
   ],
-  providers: [],
+  providers: [
+    DashboardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
