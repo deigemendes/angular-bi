@@ -1,28 +1,16 @@
 <div class="po-m-5">Dashboard</div>
 
+<div class="po-m-5">
 
-<div>
-    {{acessoLink}}
-</div>
+    <p> Pedidos Faturados no dia </p>
 
-
-<div>
-
-    <ul>
-        <li *ngFor="let pedido of pedidos">
-            {{pedido}}
-        </li>
-    </ul>
-
-    <p>Criacao de listagem de pedidos </p>
-
-    <po-table  [p-items]="pedidos" > 
+    <po-table  [p-items]="[{ Pedidos: '45125', Valor: 'PO-UI' }]"> 
        
-           
+           teste
        
     </po-table >
 
-    <po-button
+<po-button
     p-aria-label="string"
     p-icon="string | TemplateRef<void>"
     p-kind="string"

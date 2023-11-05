@@ -13,12 +13,11 @@ export class DashboardService {
   total = 0; 
 
   getPedidos() {
-    console.log(this.teste);
-    return ['1234','123568','999999']; 
+      return ['7777','123568','999999']; 
   }
 
   getValorTotal() {
-    console.log("teste execucao"); 
+  
     return this.total; 
   }
  
